@@ -3,8 +3,11 @@
 ## File Structure
 
 .
+
 ├── red_black_tree.hpp          // main part of red black tree
+
 ├── red_black_tree_test.hpp     // auxiliary test function
+
 └── red_black_tree_test.cpp     // test cases (catch2)
 
 ## Bibliography
