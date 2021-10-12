@@ -492,6 +492,7 @@ template <class Key, class T>
 void RedBlackTree<Key, T>::Clear()
 {
     Node *now, *parent;
+    if (root_ == nil_) return;
     now = TreeMinimum(root_);
     while (now != nil_)
     {
