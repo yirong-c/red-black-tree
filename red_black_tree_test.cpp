@@ -7,7 +7,7 @@
 
 typedef RedBlackTreeTest<int, char> Tree;
 
-TEST_CASE("rbt", "[rbt]")
+TEST_CASE("rbt 1")
 {
     Tree tree;
     std::pair<Tree::Iterator, bool> insert_result, insert_result2;
@@ -69,7 +69,14 @@ TEST_CASE("rbt", "[rbt]")
 
     REQUIRE(tree.Begin()->first == 10);
     REQUIRE(tree.Begin()->second == 'd');
-
 }
 
-
+TEST_CASE("rbt 2")
+{
+    Tree tree;
+    std::pair<Tree::Iterator, bool> insert_result, insert_result2;
+    tree.Insert({10, 'a'});
+    tree.Insert({30, 'a'});
+    tree.Insert({20, 'a'});
+    REQUIRE(tree.CheckTreeValid());
+}
