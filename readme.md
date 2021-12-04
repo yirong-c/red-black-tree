@@ -1,6 +1,6 @@
 # red black tree
 
-This module is a part of [frc123/CLRS-code-solution](https://github.com/frc123/CLRS-code-solution)
+This module is a part of [frc123/CLRS](https://github.com/frc123/CLRS)
 
 ## File Structure
 
